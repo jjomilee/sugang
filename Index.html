@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>수강신청</title>
+<style>
+  /* 전체 기본 스타일 */
+  body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+    background: #f9fafb;
+    color: #333;
+  }
+
+  /* 중앙 정렬 컨테이너 */
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+
+    position: relative; /* 추가: z-index 작동을 위해 */
+    z-index: 1;         /* 추가: 배경보다 앞으로 */
+  }
+
+  /* 제목 스타일 */
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+
+  /* 네모 박스 스타일 */
+  .info-box {
+    border: 2px solid #ccc;
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  .info-title {
+    margin: 0 0 10px 0;
+    font-size: 1.3rem;
+    color: #d9534f;
+    font-weight: 700;
+    border-bottom: 2px solid #d9534f;
+    padding-bottom: 4px;
+    text-align: center;
+  }
+  .highlight-red {
+    color: #d9534f;
+    font-weight: bold;
+  }
+
+  /* 링크 버튼 스타일 */
+  a {
+    display: inline-block;
+    width: 380px;
+    padding: 12px 0;
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3498db;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  a:hover, a:focus {
+    background-color: #2980b9;
+    box-shadow: 0 6px 10px rgba(41, 128, 185, 0.5);
+    outline: none;
+  }
+
+  /* 모바일 대응 */
+  @media (max-width: 400px) {
+    a {
+      width: 100%;
+      font-size: 1rem;
+      padding: 10px 0;
+    }
+    .info-box {
+      max-width: 100%;
+      padding: 15px 10px;
+    }
+  }
+
+  /* 배경 이미지 흐리게 처리 */
+  .bg-blur {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: url('images/수학기호그림.png') center/cover no-repeat;
+    filter: blur(8px);
+    z-index: 0; /* 배경을 뒤로 보내기 위해 음수 값 */
+  }
+</style>
+</head>
+<body>
+  <div class="bg-blur"></div>
+  <div class="container">
+    <h1>수강신청</h1>
+    <div class="info-box">
+      <h2 class="info-title">[당부사항]</h2>
+      <p>
+        수강신청 페이지입니다.<br>
+        아래 푸른색 버튼을 누르셔서 시스템에 접속해 주세요<br>
+        이것은 <span class="highlight-red">크롬</span>에서 최적화 되어 있습니다.<br>
+      </p>
+    </div>
+
+    <a href="https://script.google.com/macros/s/AKfycbzX9MNPCfY8zGTOkUgCOZej1hBRkHsR0zLCYLTcd2loaAmstpy6kO-eWnFQwB9TAEx0/exec" rel="noopener noreferrer">
+      미금중학교 진로체험 프로그램 강좌 선택페이지 접속
+    </a>
+
+
+  </div>
+
+</body>
+</html>
